@@ -51,11 +51,11 @@ function playRound(playerSelection, computerSelection) {
 // document.getElementById("playerScore").innerText = playerScore++
 restartBlock.style.display = "none";
 btn.forEach((button)=>button.addEventListener("click",()=>{
-    if(playerScore ==2){
+    if(playerScore ==10){
         div.textContent = `You WIN with ${playerScore}, Computer Looses with ${computerScore}`
         restartBlock.style.display = "flex";
     }
-    else if (computerScore ==2){
+    else if (computerScore ==10){
         div.textContent = `You Loose with ${playerScore}, Computer WINS with ${computerScore}`
         restartBlock.style.display = "flex";
     }else{
